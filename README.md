@@ -112,7 +112,7 @@ Se pueden añadir reglas de bloqueo en el futuro si hay secciones restringidas.
 
 - Cuando existan otras páginas (ej. servicios, blog, etc.), se deben agregar nuevos nodos `<url>`.
 - Al publicar en un dominio real, actualizar `loc` con la URL completa, por ejemplo:
-  - `https://www.ejemplo.com/`
+  - `https://imlapsan.com/`
 
 ### 4.3. `404.html`
 
