@@ -421,18 +421,33 @@ p {
 
 .brand-logos-row {
     display: flex;
-    align-items: center;
-    gap: 0.75rem;
+    align-items: flex-start;
+    gap: 1rem;
     margin-top: 0.65rem;
 }
 
-.brand-logos-row img {
-    height: 30px;
+.brand-logo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.brand-logo-item img {
+    height: 60px;
     width: auto;
     object-fit: contain;
     background: #ffffff;
     border-radius: 8px;
     padding: 0.25rem 0.5rem;
+}
+
+.brand-logo-item span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #e5e7eb;
 }
 
 /* LIDERAZGO */
