@@ -63,6 +63,10 @@ a {
     margin-bottom: 0.5rem;
 }
 
+.section-header h2 .section-icon {
+    margin-right: 0.45rem;
+}
+
 .section-header p {
     max-width: 640px;
     margin: 0 auto;
@@ -81,6 +85,10 @@ h1 {
 
 h2 {
     font-size: 1.9rem;
+}
+
+h2 .section-icon {
+    margin-right: 0.45rem;
 }
 
 h3 {
@@ -553,16 +561,20 @@ p {
 }
 
 .benefit-icon {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     border-radius: 999px;
-    background: rgba(43, 57, 144, 0.08);
-    color: var(--color-accent-red);
+    background: rgba(148, 163, 184, 0.1);
+    color: var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 0.6rem;
     font-weight: 700;
+}
+
+.benefit-icon i {
+    font-size: 0.95rem;
 }
 
 .benefit-item h3 {
