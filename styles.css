@@ -515,6 +515,19 @@ p {
 .product-card img {
     height: 170px;
     object-fit: cover;
+    margin: 0 auto;
+}
+
+.product-card-link {
+    display: block;
+}
+
+.product-img-trampa {
+    object-position: top center;
+}
+
+.product-img-clove {
+    object-position: top center;
 }
 
 .product-card-body {
@@ -530,6 +543,7 @@ p {
 .product-card-body p {
     font-size: 0.9rem;
     color: var(--color-text-muted);
+    text-align: justify;
 }
 
 .subsection {
