@@ -276,42 +276,51 @@ p {
 
 .hero {
     position: relative;
-    background: radial-gradient(circle at top left, rgba(255, 215, 0, 0.08), transparent 55%),
-                radial-gradient(circle at bottom right, rgba(248, 113, 113, 0.22), transparent 60%),
-                linear-gradient(135deg, var(--color-primary-dark), #1b2553, var(--color-primary));
+    /* Primera capa: imagen de portada centrada. Segunda capa: fondo para los lados */
+    background-image: url('Imagenes/Foto para portada Principal.png'), url('Imagenes/fondo para la web.png');
+    background-size: 60% auto, cover;
+    background-position: center 0%, center;
+    background-repeat: no-repeat, no-repeat;
+    background-color: #0b1024;
     color: #e5e7eb;
-    padding: 4.4rem 0 4.5rem;
+    padding: 3.8rem 0 4.5rem;
     overflow: hidden;
 }
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background-image: url('Imagenes/fondo.png');
-    background-size: cover;
-    background-position: center;
-    mix-blend-mode: soft-light;
-    opacity: 0.28;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.55));
+    opacity: 0.9;
     pointer-events: none;
 }
 
 .hero-content {
     position: relative;
     display: grid;
-    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.1fr);
-    gap: 3.2rem;
+    grid-template-columns: minmax(0, 1.2fr);
+    gap: 2rem;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text {
+    max-width: 40rem;
+    margin: 0 auto;
 }
 
 .hero-text h1 {
     color: #f9fafb;
-    margin-bottom: 1rem;
+    margin: 0 0 1rem;
 }
 
 .hero-subtitle {
     color: #e5e7eb;
     opacity: 0.9;
     max-width: 34rem;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .hero-actions {
@@ -319,6 +328,7 @@ p {
     flex-wrap: wrap;
     gap: 0.9rem;
     margin: 1.7rem 0 1.1rem;
+    justify-content: center;
 }
 
 .hero-badges {
@@ -326,6 +336,7 @@ p {
     flex-wrap: wrap;
     gap: 0.65rem;
     margin-top: 0.5rem;
+    justify-content: center;
 }
 
 .badge {
@@ -339,6 +350,7 @@ p {
 
 .hero-image-wrapper {
     position: relative;
+    display: none;
 }
 
 .hero-card {
@@ -432,6 +444,7 @@ p {
     border-radius: 14px;
     padding: 1rem 1.1rem;
     color: #e5e7eb;
+    text-align: center;
 }
 
 .card-brand-logos span {
@@ -442,6 +455,7 @@ p {
 .brand-logos-row {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     gap: 1rem;
     margin-top: 0.65rem;
 }
@@ -498,7 +512,7 @@ p {
 
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
 }
 
@@ -538,6 +552,7 @@ p {
     font-size: 1.05rem;
     margin-bottom: 0.3rem;
     color: #111827;
+    text-align: center;
 }
 
 .product-card-body p {
