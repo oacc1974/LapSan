@@ -147,9 +147,9 @@
 
                 <div class="cards-grid">
                     <article class="product-card">
-                        <a href="Imagenes/producto - Insienso Espiral Mata Mosquito - Marca Zenden.png" target="_blank" class="product-card-link">
+                        <button type="button" class="product-card-link" data-full-image="Imagenes/producto - Insienso Espiral Mata Mosquito - Marca Zenden.png" aria-label="Ver imagen ampliada Incienso espiral ZENDEN">
                             <img src="Imagenes/producto - Insienso Espiral Mata Mosquito - Marca Zenden.png" alt="Incienso espiral mata mosquitos Zenden" />
-                        </a>
+                        </button>
                         <div class="product-card-body">
                             <h3>Incienso espiral ZENDEN mata mosquitos</h3>
                             <p>Incienso espiral mata mosquitos ZENDEN, ideal para el control de plagas en el hogar y para quienes buscan un espiral anti zancudos eficaz y fácil de usar en interiores y exteriores.</p>
@@ -157,9 +157,9 @@
                     </article>
 
                     <article class="product-card">
-                        <a href="Imagenes/producto - Incienso Leon espiral mata mosquitos .png" target="_blank" class="product-card-link">
+                        <button type="button" class="product-card-link" data-full-image="Imagenes/producto - Incienso Leon espiral mata mosquitos .png" aria-label="Ver imagen ampliada Incienso León espiral mata mosquitos">
                             <img src="Imagenes/producto - Incienso Leon espiral mata mosquitos .png" alt="Incienso León espiral mata mosquitos" />
-                        </a>
+                        </button>
                         <div class="product-card-body">
                             <h3>Incienso León espiral mata mosquitos</h3>
                             <p>Incienso espiral León para eliminar mosquitos y zancudos alrededor del hogar, complemento ideal para el control de plagas y protección de la familia.</p>
@@ -167,9 +167,9 @@
                     </article>
 
                     <article class="product-card">
-                        <a href="Imagenes/producto - Incienso León mata insectos.png" target="_blank" class="product-card-link">
+                        <button type="button" class="product-card-link" data-full-image="Imagenes/producto - Incienso León mata insectos.png" aria-label="Ver imagen ampliada Trampa engomada León mata insectos">
                             <img src="Imagenes/producto - Incienso León mata insectos.png" alt="Incienso León mata insectos" />
-                        </a>
+                        </button>
                         <div class="product-card-body">
                             <h3>Trampa engomada León mata insectos</h3>
                             <p>Trampa engomada León para atrapar insectos voladores y rastreros en el hogar, una solución práctica y lista para usar que ayuda a reforzar el control de plagas domésticas.</p>
@@ -177,9 +177,9 @@
                     </article>
 
                     <article class="product-card">
-                        <a href="Imagenes/producto - Trampa Engomada - Marca Leon.png" target="_blank" class="product-card-link">
+                        <button type="button" class="product-card-link" data-full-image="Imagenes/producto - Trampa Engomada - Marca Leon.png" aria-label="Ver imagen ampliada Trampas engomadas León">
                             <img src="Imagenes/producto - Trampa Engomada - Marca Leon.png" alt="Trampas engomadas León" class="product-img-trampa" />
-                        </a>
+                        </button>
                         <div class="product-card-body">
                             <h3>Trampas engomadas León</h3>
                             <p>Trampas engomadas León para el control de roedores e insectos, una alternativa práctica y segura para el control de plagas en espacios domésticos.</p>
@@ -187,9 +187,9 @@
                     </article>
 
                     <article class="product-card">
-                        <a href="Imagenes/producto - Clove Brand - Clavo Palos de Incienso.png" target="_blank" class="product-card-link">
+                        <button type="button" class="product-card-link" data-full-image="Imagenes/producto - Clove Brand - Clavo Palos de Incienso.png" aria-label="Ver imagen ampliada Incienso Clove Brand aroma clavo">
                             <img src="Imagenes/producto - Clove Brand - Clavo Palos de Incienso.png" alt="Incienso Clove Brand aroma clavo" class="product-img-clove" />
-                        </a>
+                        </button>
                         <div class="product-card-body">
                             <h3>Incienso Clove Brand aroma clavo</h3>
                             <p>Palos de incienso Clove Brand aroma clavo, ideales para crear ambientes cálidos y aromáticos en el hogar, parte de nuestra línea de inciensos aromáticos.</p>
@@ -197,9 +197,9 @@
                     </article>
 
                     <article class="product-card">
-                        <a href="Imagenes/producto - Clove Brand - canela - Palos de Incienso.png" target="_blank" class="product-card-link">
+                        <button type="button" class="product-card-link" data-full-image="Imagenes/producto - Clove Brand - canela - Palos de Incienso.png" aria-label="Ver imagen ampliada Incienso Clove Brand aroma canela">
                             <img src="Imagenes/producto - Clove Brand - canela - Palos de Incienso.png" alt="Incienso Clove Brand aroma canela" class="product-img-clove" />
-                        </a>
+                        </button>
                         <div class="product-card-body">
                             <h3>Incienso Clove Brand aroma canela</h3>
                             <p>Palos de incienso Clove Brand aroma canela, pensados para perfumar los espacios del hogar con fragancias agradables y constantes.</p>
@@ -341,6 +341,15 @@
         </section>
     </main>
 
+    <!-- Visor de imagen de producto (modal) -->
+    <div class="image-modal" id="imageModal" aria-hidden="true">
+        <div class="image-modal-backdrop" data-modal-close></div>
+        <div class="image-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="imageModalTitle">
+            <button type="button" class="image-modal-close" aria-label="Cerrar imagen" data-modal-close>&times;</button>
+            <img src="" alt="Imagen ampliada de producto" id="imageModalImg" />
+        </div>
+    </div>
+
     <footer class="main-footer">
         <div class="container footer-grid">
             <div class="footer-col">
@@ -379,6 +388,44 @@
 
         navToggle.addEventListener('click', () => {
             headerInner.classList.toggle('nav-open');
+        });
+
+        // Visor modal para imágenes de productos
+        const imageModal = document.getElementById('imageModal');
+        const imageModalImg = document.getElementById('imageModalImg');
+        const productImageButtons = document.querySelectorAll('.product-card-link[data-full-image]');
+
+        function openImageModal(src) {
+            imageModalImg.src = src;
+            imageModal.setAttribute('aria-hidden', 'false');
+            imageModal.classList.add('is-open');
+        }
+
+        function closeImageModal() {
+            imageModal.classList.remove('is-open');
+            imageModal.setAttribute('aria-hidden', 'true');
+            imageModalImg.src = '';
+        }
+
+        productImageButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const src = btn.getAttribute('data-full-image');
+                if (src) {
+                    openImageModal(src);
+                }
+            });
+        });
+
+        imageModal.addEventListener('click', (event) => {
+            if (event.target.hasAttribute('data-modal-close')) {
+                closeImageModal();
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+                closeImageModal();
+            }
         });
     </script>
 </body>

@@ -534,6 +534,10 @@ p {
 
 .product-card-link {
     display: block;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 .product-img-trampa {
@@ -634,6 +638,59 @@ p {
     font-size: 0.95rem;
     color: var(--color-text-muted);
     text-align: justify;
+}
+
+/* MODAL IMÁGENES PRODUCTO */
+
+.image-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 40;
+}
+
+.image-modal.is-open {
+    display: flex;
+}
+
+.image-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.75);
+}
+
+.image-modal-dialog {
+    position: relative;
+    background: transparent;
+    border-radius: 14px;
+    padding: 0;
+    max-width: min(90vw, 640px);
+    width: auto;
+    max-height: 80vh;
+    box-shadow: 0 25px 60px rgba(15, 23, 42, 0.8);
+    border: none;
+}
+
+.image-modal-dialog img {
+    width: auto;
+    max-width: 100%;
+    max-height: 80vh;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.image-modal-close {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    color: #e5e7eb;
+    font-size: 1.4rem;
+    cursor: pointer;
 }
 
 /* BENEFICIOS */
