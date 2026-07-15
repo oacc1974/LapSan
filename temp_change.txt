@@ -1,0 +1,7 @@
+Cambiar la línea 146 de:
+<i class="fas fa-handshake" style="color:var(--primary-color)"></i>
+
+A:
+<i class="fas fa-handshake" style="color:#fff"></i>
+
+Esto cambiará el color de las manos entrelazadas de azul oscuro a blanco para mejor contraste con el fondo dorado.
