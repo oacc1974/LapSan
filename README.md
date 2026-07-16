@@ -1,178 +1,255 @@
-# 🏛️ Unileg Ecuador - Landing Page Profesional
+# Importadora LAP SAN – Landing Page y Plan SEO
 
-Landing page profesional y optimizada para SEO para **Unileg Ecuador**, firma de abogados especializada en servicios legales integrales en Ecuador.
+Este proyecto contiene la landing page corporativa de **Importadora LAP SAN** (Guayaquil – Ecuador), enfocada en soluciones para el hogar en **control de plagas** e **inciensos aromáticos**.
 
-## 📋 Descripción del Proyecto
+## Tecnologías utilizadas
 
-Sitio web moderno y responsive diseñado para atraer clientes y posicionar a Unileg Ecuador como referente en servicios legales en Quito, Guayaquil y todo Ecuador.
+- **HTML5**: estructura semántica clara (header, main, sections, footer).
+- **CSS3**: estilos modernos y responsive, listos para utilizar variables CSS si se requiere.
+- **JavaScript (vanilla)**: funcionalidad básica (menú móvil, año dinámico en el footer) sin dependencias externas.
+- **Font Awesome 6.4** (opcional): para usar iconos profesionales en caso de que se integren en el futuro.
 
-## ✨ Características Principales
+## 1. Objetivo SEO
 
-### 🎨 Diseño
-- **Responsive Design**: Adaptado para móvil, tablet y desktop
-- **Colores Corporativos**: Azul #0B2239, Amarillo #F5C518, Blanco #FFFFFF
-- **Animaciones Suaves**: Transiciones y efectos visuales profesionales
-- **Imágenes Optimizadas**: Lazy loading para carga rápida
+Posicionar la landing para búsquedas relacionadas con:
 
-### 🔍 SEO Optimizado
-- **Meta Tags Completos**: Title, description, keywords optimizados
-- **Schema.org**: Structured data para servicios legales
-- **Open Graph**: Optimizado para redes sociales
-- **Sitemap XML**: Incluido para indexación
-- **Robots.txt**: Configurado correctamente
-- **URLs Semánticas**: Estructura clara y amigable
+- Importadora y distribuidora de inciensos y productos para el control de plagas en Ecuador.
+- Inciensos espirales mata mosquitos (marca **ZENDEN**) y trampas engomadas **LEÓN**.
+- Búsquedas locales relacionadas con Guayaquil y el mercado ecuatoriano.
 
-### 📱 Secciones Incluidas
-1. **Hero Section**: Presentación impactante con estadísticas
-2. **Servicios**: 8 servicios legales con imágenes
-3. **Casos de Éxito**: 3 casos reales destacados
-4. **Nosotros**: Propuesta de valor y diferenciadores
-5. **FAQ**: 10 preguntas frecuentes con acordeón
-6. **Contacto**: Formulario + información de contacto
-7. **Footer**: Enlaces rápidos y redes sociales
+## 2. Palabras clave sugeridas
 
-### 🚀 Funcionalidades
-- Menú de navegación sticky
-- Menú móvil hamburguesa
-- Acordeón FAQ interactivo
-- Formulario de contacto (Formspree)
-- Botón flotante de WhatsApp
-- Smooth scroll en navegación
-- Animaciones on scroll
+Ejemplos de keywords y variantes a utilizar de forma natural en los textos:
 
-## 📁 Estructura de Archivos
+- **Marca + servicio**
+  - `importadora lap san`
+  - `importadora de inciensos en ecuador`
+  - `importadora de productos para control de plagas`
 
+- **Producto + país/ciudad**
+  - `incienso mata mosquitos ecuador`
+  - `incienso espiral mata mosquitos zenden`
+  - `trampas engomadas leon ecuador`
+  - `incienso aromatico clove`
+
+- **Intención local**
+  - `control de plagas en guayaquil`
+  - `proveedor de productos para el hogar en guayaquil`
+  - `distribuidor de inciensos y control de plagas en ecuador`
+
+Las palabras clave deben aparecer de forma natural en:
+
+- Título principal (`<h1>`).
+- Subtítulos (`<h2>`, `h3`).
+- Primeros párrafos de texto.
+- Descripciones de productos.
+
+## 3. SEO on-page implementado
+
+En `index.html` se han aplicado las siguientes prácticas:
+
+- **Title SEO optimizado**:
+  - `Importadora LAP SAN | Control de plagas e inciensos aromáticos para el hogar`
+- **Meta description descriptiva y local**:
+  - Menciona Guayaquil, Ecuador, control de plagas, inciensos aromáticos y experiencia de 20+ años.
+- **Meta robots**:
+  - `<meta name="robots" content="index,follow" />`
+- **Canonical**:
+  - `<link rel="canonical" href="/" />` (actualizar con el dominio definitivo cuando esté disponible).
+- **Open Graph (OG)** para redes sociales y bots:
+  - `og:title`, `og:description`, `og:type`, `og:url`, `og:site_name`, `og:image`.
+- **Twitter Card**:
+  - `summary_large_image` con título, descripción e imagen del logo.
+- **Estructura de encabezados clara**:
+  - `h1` único para el título principal.
+  - `h2` para secciones: Quiénes somos, Liderazgo en el mercado, Portafolio de productos, Beneficios, Contáctenos.
+- **Contenido relevante**:
+  - Textos que explican experiencia, productos, liderazgo de la marca ZENDEN y beneficios para el cliente.
+
+### Recomendaciones on-page adicionales
+
+- Ajustar ligeramente el `h1` y subtítulos para incluir variaciones como:
+  - "inciensos mata mosquitos en Ecuador", "control de plagas para el hogar", etc.
+- Revisar que los textos se mantengan naturales y sin sobrecarga de palabras clave.
+- Revisar y optimizar **atributos `alt` de las imágenes** para que sean descriptivos (tipo de producto, marca y contexto), por ejemplo:
+  - `alt="Incienso espiral mata mosquitos marca ZENDEN en empaque"`.
+
+## 4. SEO técnico
+
+Archivos creados en la raíz del proyecto `Lap`:
+
+### 4.1. `robots.txt`
+
+```txt
+User-agent: *
+Disallow:
+
+Sitemap: /sitemap.xml
 ```
-Unileg/
-├── index.html          # Página principal
-├── styles.css          # Estilos CSS
-├── main.js            # JavaScript funcional
-├── 404.html           # Página de error personalizada
-├── robots.txt         # Configuración para bots
-├── sitemap.xml        # Mapa del sitio
-├── .htaccess          # Configuración Apache
-├── Imagenes/          # Carpeta de imágenes
-│   ├── Logo.png
-│   ├── 1 - ASESORIA LEGAL EN MIGRACIÓN Y EXTRANJERIA.jpg
-│   ├── 2 - ASESORIA LEGAL EN MATERIA SOCIETARIA.jpg
-│   ├── 3 - ASUNTOS DE PROPIEDAD INTELECTUAL.jpg
-│   ├── 4 - ASESORIA LEGAL EN INVERSION EXTRANJERA EN ECUADOR.jpg
-│   ├── 5 - ASESORÍA Y DEFENSA EN DERECHO ADMINISTRATIVO.jpg
-│   ├── 6 - ASESORIA EN ASUNTOS DE LA ECONOMÍA POPULAR Y SOLIDARIA.jpg
-│   ├── 7 - ASESORIA LEGAL EN TODO LO RELACIONADO AL DERECHO DE FAMILIA.jpg
-│   └── 8 - ASESORIA LEGAL EN DERECHO LABORAL.jpg
-└── README.md          # Este archivo
+
+- Permite el rastreo completo (`index, follow`).
+- Indica a los bots la ubicación del sitemap.
+
+Se pueden añadir reglas de bloqueo en el futuro si hay secciones restringidas.
+
+### 4.2. `sitemap.xml`
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>/index.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>
 ```
 
-## 🛠️ Tecnologías Utilizadas
+- Cuando existan otras páginas (ej. servicios, blog, etc.), se deben agregar nuevos nodos `<url>`.
+- Al publicar en un dominio real, actualizar `loc` con la URL completa, por ejemplo:
+  - `https://imlapsan.com/`
 
-- **HTML5**: Estructura semántica
-- **CSS3**: Estilos modernos con variables CSS
-- **JavaScript (Vanilla)**: Sin dependencias externas
-- **Font Awesome 6.4**: Iconos profesionales
-- **Google Fonts (Inter)**: Tipografía moderna
-- **Formspree**: Gestión de formularios
+### 4.3. `404.html`
 
-## 🚀 Instalación y Uso
+- Página de error personalizada con:
+  - Título: `404 - Página no encontrada`.
+  - Estilo reutilizando `styles.css`.
+  - Botón para volver a `/index.html`.
+  - Meta `robots` configurado como `noindex,follow`.
+- El servidor (Apache, Nginx, hosting) debe configurarse para utilizar este `404.html` como página de error.
 
-### Opción 1: Hosting Tradicional
-1. Sube todos los archivos a tu servidor web
-2. Asegúrate de que el servidor soporte `.htaccess`
-3. Configura el certificado SSL (HTTPS)
-4. Actualiza el ID de Formspree en el formulario
+### 4.4. Seguridad (recomendado en `.htaccess` o configuración del servidor)
 
-### Opción 2: GitHub Pages
-1. Crea un repositorio en GitHub
-2. Sube todos los archivos
-3. Activa GitHub Pages en Settings
-4. Tu sitio estará en `https://tuusuario.github.io/unileg`
+- Configurar **headers de seguridad**:
+  - `Content-Security-Policy` (CSP) adecuada al proyecto.
+  - `X-Content-Type-Options: nosniff`.
+  - `X-Frame-Options: SAMEORIGIN` (prevención de **clickjacking**).
+  - `X-XSS-Protection: 1; mode=block` (protección básica contra **XSS** en navegadores que lo soporten).
+- Obligar uso de **HTTPS**:
+  - Redirección permanente `http → https`.
+  - Redirección `dominio.com/index.html → dominio.com/` para evitar contenido duplicado.
+- Opcional: cabeceras de privacidad/cookies si se añaden herramientas de analítica.
+- Seguir aplicando buenas prácticas de rendimiento:
+  - Comprimir imágenes (idealmente < 200 KB cada una).
+  - Minificar CSS/JS en modo producción si es necesario.
+- Verificar experiencia móvil y métricas core web vitals con herramientas como **PageSpeed Insights** o **Lighthouse**.
 
-### Opción 3: Netlify (Recomendado)
-1. Arrastra la carpeta completa a Netlify
-2. Configuración automática
-3. SSL gratuito incluido
-4. Deploy en segundos
+## 5. Datos estructurados (schema.org)
 
-## ⚙️ Configuración Necesaria
+Se recomienda añadir datos estructurados (JSON-LD) para que los buscadores entiendan mejor la empresa.
 
-### 1. Formspree (Formulario de Contacto)
+### 5.1. Tipo recomendado
+
+- `Organization` o `LocalBusiness`.
+
+### 5.2. Campos sugeridos
+
+- `@type`: `Organization` / `LocalBusiness`.
+- `name`: `Importadora LAP SAN`.
+- `address`: dirección en Guayaquil – Ecuador.
+- `email`: `ventas@imlapsan.com`.
+- `url`: URL del sitio (cuando exista dominio definido).
+- `logo`: URL absoluta del logo.
+- `telephone`: teléfono comercial.
+- `sameAs`: enlaces a redes sociales (si aplica).
+
+> Nota: El JSON-LD debe agregarse dentro del `<head>` de `index.html` en un bloque `<script type="application/ld+json">`.
+
+## 6. SEO local
+
+Importante para posicionarse en Guayaquil y Ecuador:
+
+- Crear y optimizar **Google Business Profile (Google Mi Negocio)**:
+  - Nombre: Importadora LAP SAN.
+  - Categoría adecuada (importadora / distribuidor / control de plagas / productos para el hogar).
+  - Dirección completa, teléfono, sitio web.
+  - Horarios de atención.
+  - Fotografías de productos, bodegas, oficinas.
+  - Solicitar reseñas a clientes.
+
+- Presencia en **directorios y cámaras locales**:
+  - Cámaras de comercio, asociaciones del sector, directorios empresariales de Ecuador.
+
+## 7. SEO off-page (enlaces y autoridad)
+
+Acciones recomendadas:
+
+- Conseguir **backlinks** desde:
+  - Distribuidores, mayoristas, cadenas de tiendas que trabajen con LAP SAN.
+  - Blogs o portales de hogar, control de plagas, estilo de vida.
+  - Medios digitales con notas de prensa sobre la marca ZENDEN y la empresa.
+
+- Enlaces desde sitios de **marcas asociadas** (si existen páginas oficiales de ZENDEN, LEÓN, CLOVE) mencionando a LAP SAN como representante en Ecuador.
+
+## 8. Formularios y medición
+
+### 8.1. Formulario de contacto con Formspree
+
+El formulario de contacto en `index.html` está preparado para funcionar con **Formspree**:
+
 ```html
-<!-- En index.html, línea 452 -->
-<form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<form id="contactForm" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 ```
-- Regístrate en [Formspree.io](https://formspree.io)
-- Crea un nuevo formulario
-- Reemplaza `YOUR_FORM_ID` con tu ID real
 
-### 2. Google Analytics (Opcional)
-```javascript
-// En main.js, línea 113
-gtag('config', 'G-XXXXXXXXXX'); // Reemplaza con tu ID
+Pasos para activarlo:
+
+1. Registrarse en [https://formspree.io](https://formspree.io).
+2. Crear un **nuevo formulario** (proyecto) para el sitio de Importadora LAP SAN.
+3. Copiar el **Form ID** que proporciona Formspree (formato similar a `/f/abcdwxyz`).
+4. Reemplazar `YOUR_FORM_ID` en el atributo `action` por el ID real, por ejemplo:
+
+```html
+action="https://formspree.io/f/abcdwxyz"
 ```
-- Crea una propiedad en Google Analytics
-- Copia tu Measurement ID
-- Reemplázalo en el código
 
-### 3. Dominio Personalizado
-Actualiza todas las URLs en:
-- `index.html` (meta tags, canonical)
-- `sitemap.xml`
-- `robots.txt`
+> A partir de ese momento, cada envío del formulario se enviará al correo configurado en Formspree.
 
-Reemplaza `https://www.unilegec.com` con tu dominio real.
+## 9. Medición y seguimiento
 
-## 📊 Checklist de Lanzamiento
+Una vez que el sitio esté publicado en su dominio final:
 
-- [ ] Configurar Formspree con email real
-- [ ] Actualizar Google Analytics ID
-- [ ] Reemplazar dominio en todos los archivos
-- [ ] Optimizar imágenes (TinyPNG o similar)
-- [ ] Configurar SSL/HTTPS
-- [ ] Enviar sitemap a Google Search Console
-- [ ] Crear Google My Business
-- [ ] Configurar redes sociales
-- [ ] Probar formulario de contacto
-- [ ] Verificar responsive en todos los dispositivos
-- [ ] Probar velocidad de carga (PageSpeed Insights)
+- **Google Search Console**:
+  - Verificar la propiedad del dominio.
+  - Enviar `sitemap.xml`.
+  - Revisar cobertura (errores 404, problemas de indexación, etc.).
+  - Revisar consultas de búsqueda y páginas con más impresiones/clics.
 
-## 🎯 Keywords Principales
+- **Google Analytics / GA4**:
+  - Medir tráfico orgánico.
+  - Configurar eventos para:
+    - Clic en "Ver portafolio de productos".
+    - Clic en "Contactar ventas".
+    - Envíos del formulario de contacto.
 
-1. abogados en Ecuador
-2. asesoría legal Ecuador
-3. servicios jurídicos Quito Guayaquil
-4. constitución de compañías en Ecuador
-5. abogados para migración Ecuador
+### 9.1. Google Analytics (opcional)
 
-## 📞 Información de Contacto
+Si se desea medir el comportamiento de los usuarios con **Google Analytics 4 (GA4)**:
 
-- **Email**: contacto@unilegec.com
-- **WhatsApp**: +593 995182463
-- **Teléfono**: +593 995182463
-- **Ubicación**: Guayaquil, Ecuador
-- **Facebook**: [facebook.com/unilegecuador](https://www.facebook.com/unilegecuador)
-- **Instagram**: [instagram.com/unilegecuador](https://www.instagram.com/unilegecuador)
-- **LinkedIn**: [linkedin.com/company/unileg-ecuador](https://www.linkedin.com/company/unileg-ecuador)
+1. Crear una **propiedad GA4** en la cuenta de Google Analytics.
+2. En la sección *Flujos de datos* (Web), copiar el **Measurement ID** (formato `G-XXXXXXXXXX`).
+3. Integrar la etiqueta de Google en el sitio, normalmente en el `<head>` de `index.html` o en un archivo JS central (por ejemplo, `main.js`).
 
-## 📈 Próximos Pasos (Mejoras Futuras)
+Ejemplo de línea de configuración (una vez cargado `gtag.js`):
 
-1. **Blog de Contenido Legal**: Artículos SEO sobre temas legales
-2. **Testimonios de Clientes**: Sección con reseñas verificadas
-3. **Chat en Vivo**: Integración con Tawk.to o similar
-4. **Calculadora de Honorarios**: Herramienta interactiva
-5. **Portal de Clientes**: Área privada para seguimiento de casos
-6. **Versión Multiidioma**: Inglés para clientes extranjeros
+```js
+gtag('config', 'G-XXXXXXXXXX'); // Reemplaza con tu Measurement ID real
+```
 
-## 🔒 Seguridad
+> Importante: no subir a producción el ID genérico; siempre reemplazar `G-XXXXXXXXXX` por el ID de medición correcto de la propiedad.
 
-- Headers de seguridad configurados en `.htaccess`
-- Protección contra XSS
-- Prevención de clickjacking
-- HTTPS obligatorio (redirección automática)
+## 9. Checklist rápido
 
-## 📄 Licencia
-
-© 2025 Unileg Ecuador. Todos los derechos reservados.
-
----
-
-**Desarrollado con excelencia para Unileg Ecuador** 🏛️⚖️
+- [ ] Definir dominio final y actualizar `canonical`, `og:url` y `sitemap.xml`.
+- [ ] Revisar y optimizar `alt` de todas las imágenes.
+- [ ] Afinar textos de `h1`, subtítulos y párrafos con palabras clave naturales.
+- [ ] Configurar HTTPS y redirecciones en el servidor.
+- [ ] Asegurar que el servidor use `404.html` como página de error.
+- [ ] Añadir datos estructurados (JSON-LD) de `Organization` o `LocalBusiness`.
+- [ ] Crear/optimizar Google Business Profile.
+- [ ] Registrar el sitio en Google Search Console y enviar `sitemap.xml`.
+- [ ] Configurar Google Analytics / GA4 y eventos principales.
